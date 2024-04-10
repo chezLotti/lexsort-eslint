@@ -1,0 +1,28 @@
+{
+	"name": "lexsort-eslint",
+	"version": "1.0.0",
+	"description": "lexical exlint sorter for .properties files",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint src/**/*.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chezLotti/lexsort-eslint.git"
+	},
+	"keywords": [
+		"lexical",
+		"sorter",
+		"eslint"
+	],
+	"author": "Charlotte Wahl",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/chezLotti/lexsort-eslint/issues"
+	},
+	"homepage": "https://github.com/chezLotti/lexsort-eslint#readme",
+	"devDependencies": {
+		"eslint": "^9.0.0"
+	}
+}
