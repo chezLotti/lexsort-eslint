@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint src/**/*.js"
+		"lint": "eslint"
 	},
 	"repository": {
 		"type": "git",
@@ -23,6 +23,7 @@
 	},
 	"homepage": "https://github.com/chezLotti/lexsort-eslint#readme",
 	"devDependencies": {
-		"eslint": "^9.0.0"
+		"eslint": "^9.0.0",
+		"eslint-plugin-lexsort": "file:packages/eslint"
 	}
 }
