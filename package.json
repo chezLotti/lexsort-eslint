@@ -1,29 +1,25 @@
 {
-	"name": "lexsort-eslint",
-	"version": "1.0.0",
-	"description": "lexical exlint sorter for .properties files",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/chezLotti/lexsort-eslint.git"
-	},
-	"keywords": [
-		"lexical",
-		"sorter",
-		"eslint"
-	],
-	"author": "Charlotte Wahl",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/chezLotti/lexsort-eslint/issues"
-	},
-	"homepage": "https://github.com/chezLotti/lexsort-eslint#readme",
-	"devDependencies": {
-		"eslint": "^9.0.0",
-		"eslint-plugin-lexsort": "file:packages/eslint"
-	}
+  "name": "eslint-plugin-lexsort",
+  "version": "1.0.0",
+  "description": "enforces lexically sorted properties",
+  "main": "eslint-plugin-lexsort.js",
+  "scripts": {
+    "test": "node enforce-lexsort.test.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "lexical",
+    "sorter"
+  ],
+  "author": "Charlotte Wahl",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": ">=9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-parser-plain": "^0.1.0"
+  }
 }

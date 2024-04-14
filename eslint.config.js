@@ -1,17 +1,19 @@
-// eslint.config.js
+"use strict";
+
+const { parseForESLint } = require("eslint-parser-plain/index");
+const eslintPluginLexsort = require("./eslint-plugin-lexsort");
+
 module.exports = [
-	{
-		languageOptions: {
-			parserOptions: {
-				ecmaVersion: 2020,
-			},
-		},
-		plugins: {lexsort},
-		files: ["src/**/*.properties"],
-		rules: {
-			semi: "error",
-			"prefer-const": "error",
-			"lexsort/func-prefix-matching": [1, {include: [], exclude: []}],
-		},
-	},
-];
+  {
+    files: ["**/*.js", '**/*.properties'],
+    languageOptions: {
+      sourceType: "commonjs",
+      ecmaVersion: "latest",
+      parser: {"eslint-parser-plain": parseForESLint},
+    },
+    plugins: {"lexsort": eslintPluginLexsort},
+    rules: {
+      "lexsort/enforce-lexsort": "error",
+    },
+  }
+]
